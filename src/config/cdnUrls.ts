@@ -14,13 +14,13 @@ const LOCAL_URL_GOOGLE = '/emoji/google-emoji/64/';
 
 export function cdnUrl(emojiStyle: EmojiStyle): string {
   switch (emojiStyle) {
-    case EmojiStyle.TWITTER:
-      return LOCAL_URL_TWITTER;
+    case EmojiStyle.APPLE:
+      return LOCAL_URL_APPLE;
     case EmojiStyle.GOOGLE:
       return LOCAL_URL_GOOGLE;
     case EmojiStyle.FACEBOOK:
       return LOCAL_URL_FACEBOOK;
-    case EmojiStyle.APPLE:
+    case EmojiStyle.TWITTER:
     default:
       return LOCAL_URL_TWITTER;
   }
